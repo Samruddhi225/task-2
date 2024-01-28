@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            personal portfolio using html and css
+        </title>
+        <style type="text/css">
+        
+            *{margin: 0% ; padding: 0 ; box-sizing: border-box ;
+            text-decoration: none;}
+            nav {
+                position: sticky;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem 3.5rem;
+                background-color: black;
+                box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+              }
+              nav h1 {
+                color: white;
+              }
+              h2{
+                
+                font-size: 40px;               
+              }
+              h3{
+                font-size: 50px;
+              }
+              h4{
+                font-size: 30px;
+                font-weight: bolder;
+              }
+              
+              nav a {
+                color: white;
+                transition: var(--transition);
+              }
+              nav a:hover {
+                color: whitesmoke;
+                border-bottom: 2p solid white;
+              }
+              
+              nav ul {
+                display: flex;
+                gap: 1.9rem;
+              }
+              
+              nav ul li {
+                font-weight: var(--bold-font);
+              }
+              .burger-menu {
+                color: var(--primary-color);
+                font-size: 2rem;
+                border: 0;
+                background-color: transparent;
+                cursor: pointer;
+                display: none;
+              }
+              #description{
+                padding-left: 50px;
+                margin-top: 200px;
+                
+              }
+              button{
+                background-color: black;
+                color: aliceblue;
+                height: 40px;
+                margin-left: 50px;
+                border-radius: 4px;
+                width: 120px;
+                margin-top: 20px;
+                font-size: 15px;
+                         
+              }
+              .button{
+    display:block;
+    margin:0 auto;
+    cursor: pointer;
+    width:53px;
+    height:18px;
+    position:relative;
+    z-index:1;
+    overflow:hidden;
+    font-size:20px;
+    font-weight:300;
+    letter-spacing: 2px;
+    color:#fff;
+    border-radius: 7px;
+    padding:20px 45px;
+    box-shadow: 0 0px 10px rgba(221, 160, 221, 0.25),
+        0 0px 15px rgba(39, 39, 175, 0.418), 0 0px 35px rgba(25, 25, 112, 0.55);
+}
+.button::before{
+    content:'';
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:200%;
+    background: linear-gradient(to bottom right, #191970, #dda0dd);
+    transition: transform 0.4s;
+    z-index:-1;
+}
+.button a{
+    text-decoration:none;
+    color:#fff;
+}
+.button:hover::before{
+    transform:translateY(-20%);
+}
+              
+
+        </style>
+    </head>
+    <body>
+    
+        <header>
+            <nav> 
+                <h1>Samruddhi's <br>Portfolio </h1>
+                <ul class="navigation">
+                  <li><a href="about" class="nav-link">About</a></li>
+                  <li><a href="skills" class="nav-link">Skills</a></li>
+                  <li><a href="projects" class="nav-link">Projects</a></li>
+                  <li><a href="contact" class="nav-link">Contact</a></li>
+                </ul>                
+          </nav>
+          <div id="description">
+          <h2> Hello , <br> <h3> I'm Samruddhi Kshirsagar </h3>
+          <h4> <b>Frontend Developer </b></h4> 
+          </div>
+        </header>   
+        
+                 
+        <button > Contact me</button>
+        <img src="C:\Users\KSHIRSAGAR\Desktop\Samruddhi\codsoft projects\portfolio task 2\portfolio dp.jpg" alt="portfolio">
+        
+        
+    </body>
+</html>
